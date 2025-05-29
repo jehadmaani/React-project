@@ -1,0 +1,47 @@
+/*   الرئيسية */
+.home-container {
+  display: flex; /*  */
+  height: 100vh; /**/
+  width: 100%; /* */
+  position: relative;
+}
+
+/*  الفيديو */
+.background-video {
+  width: 50%; /* نصف عرض الشاشة */
+  height: 100%; /*    */
+  object-fit: cover; /*   أبعاد الفيديو وتعبئة المساحة */
+  position: absolute; /*   خلف النص */
+  top: 0;
+  left: 0;
+  z-index: -1; /* وضع الفيديو خلف النص */
+}
+
+/*  النص داخل الخلفية  الجزء الاعلى */
+.content-home {
+  position: absolute; /* وضع النص فوق الفيديو */
+  top: 5%; /* بدء النص من الأعلى) */
+  left: 1.75%; /*  المسافة من اليسار */
+  width: 40%; /* */
+  background: rgba(0, 0, 0, 0.5); /* خلفية  شفافة */
+  padding: 20px 30px; /* */
+  border-radius: 10px; /*    */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /*  ظل  */
+  z-index: 1; /*  النص فوق الفيديو */
+}
+
+/*  العنوان */
+.content-home h1 {
+  font-size: 2.5rem; /* */
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #f9f9f9; /* */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /*  ظل للنص */
+}
+
+/* تنسيق النصوص */
+.content-home p {
+  font-size: 1.2rem; /*   للنصوص */
+  line-height: 1.6; /*  المسافات بين الأسطر */
+  color: #eaeaea; /* */
+}

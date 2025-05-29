@@ -1,0 +1,113 @@
+/* OVERLAY */
+.overlay {
+  z-index: 9;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.85);
+  transition: all 0.5s ease-in-out;
+  transform: translateX(-100%);
+}
+
+.overlay-slide-right {
+  transform: translateX(0);
+}
+
+.overlay-slide-left {
+  transform: translateX(-100%);
+}
+
+/* NAV MENU ITEMS */
+.navbar-links {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.navbar-links li {
+  margin: 10px 0;
+}
+
+.navbar-links a {
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 10px 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.navbar-links a:hover {
+  background-color: #ffa500;
+  color: #fff;
+  transform: scale(1.05);
+}
+
+/* LOGOUT BUTTON STYLING */
+.logout-button {
+  color: #fff;
+  background-color: #d9534f;
+  padding: 10px 20px;
+  font-size: 1.6rem;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.logout-button:hover {
+  background-color: #c9302c;
+  transform: scale(1.05);
+}
+
+/*  MENU */
+.hamburger-menu {
+  position: fixed;
+  top: 1.5rem;
+  right: 2rem;
+  z-index: 10;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.hamburger-menu:hover {
+  transform: scale(1.1);
+}
+
+.menu-bar1,
+.menu-bar2,
+.menu-bar3 {
+  width: 3.5rem;
+  height: 0.2rem;
+  background-color: #070404;
+  margin: 0.6rem 0;
+  transition: 0.4s;
+  border-radius: 5px;
+}
+
+.menu-bar2 {
+  width: 2.2rem;
+  margin-left: auto;
+}
+
+.active .menu-bar1 {
+  transform: rotate(-45deg) translate(-0.7rem, 0.8rem);
+  background-color: #fff;
+}
+
+.active .menu-bar2 {
+  opacity: 0;
+  background-color: #fff;
+}
+
+.active .menu-bar3 {
+  transform: rotate(45deg) translate(-0.6rem, -0.8rem);
+  background-color: #fff;
+}

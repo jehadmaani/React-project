@@ -1,0 +1,72 @@
+/*   المزارع */
+/* FarmList.css */
+
+.container {
+  position: relative; /* */
+  padding: 20px; /* */
+  text-align: right; /* */
+  z-index: 1; /* */
+}
+.container h2 {
+  text-align: center;
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*  الخلفية */
+.container::before {
+  content: "";
+  position: absolute; /* الصورة و كونتينر*/
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("https://img.freepik.com/premium-photo/swimming-pool-with-artificial-waterfall-backyard-luxury-hotel-tropics-generative-ai_1259709-147318.jpg?w=1060"); /* استبدل هذا برابط الصورة التي ترغب في استخدامها */
+  background-size: cover; /*   تغطي كامل العنصر */
+  background-position: center; /*   الصورة في الوسط */
+  opacity: 0.5; /* تعيين الشفافية ) */
+  z-index: -1; /*   أن الصورة خلف المحتوى*/
+}
+
+.farm-list {
+  list-style-type: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.farm-list li {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.farm-list li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.farm-list a {
+  color: #00509e; /**/
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.farm-list a:hover {
+  text-decoration: underline;
+}
+.rating-stars {
+  display: inline;
+}
+/*   التمرير */
+.price-slider {
+  width: 25%; /*    ربع العرض */
+  position: absolute; /*  بشكل مطلق */
+  left: 0; /*  لليسار */
+  margin-left: 40px;
+  margin-bottom: 50px;
+}

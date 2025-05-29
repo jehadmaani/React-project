@@ -1,0 +1,67 @@
+/* styleComp.css */
+body {
+  margin: 0; /*  */
+  padding: 0; /*    */
+  background: url("https://img.freepik.com/premium-photo/swimming-pool-with-artificial-waterfall-backyard-luxury-hotel-tropics-generative-ai_1259709-147318.jpg?w=1060")
+    no-repeat center center fixed; /*    */
+  background-size: cover; /*    كامل الشاشة */
+  position: relative; /*  الطبقة الشفافة */
+}
+
+/*  طبقة شفافة */
+body::before {
+  content: "";
+  position: fixed; /*     عند التمرير */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.5); /*  الشفافية */
+  pointer-events: none; /*  النقر على العناصر فوقها */
+  z-index: -1; /*    */
+}
+
+.farm-detail {
+  color: white; 
+  background-color: rgba(0, 0, 0, 0.7); /*  خلفية غامقة لجعل النص بارزًا */
+  padding: 20px; 
+  border-radius: 10px; /*  زوايا  */
+  text-align: right; /*  النص  لليمين */
+}
+
+.farm-title {
+  font-size: 2em; /*    لعنوان المزرعة */
+  margin-bottom: 10px; /*   تحت العنوان */
+}
+
+.farm-info {
+  display: flex; /* استخدام flexbox لتنسيق الصورة والنص */
+  align-items: center; /*  العناصر عموديًا */
+  justify-content: center; /*  العناصر أفقيًا   */
+}
+
+.farm-image {
+  width: 450px; /* */
+  height: auto; /*   نسبة الطول إلى العرض */
+  margin: 0 20px; /* إضافة مسافة من الجانبين */
+}
+
+.farm-text {
+  flex: 1; /*    المساحة المتاحة */
+}
+
+.farm-buttons {
+  margin-top: 15px; /*  مسافة فوق أزرار الحجز */
+}
+
+.button {
+  background-color: #007bff; /*  زر الحجز */
+  color: white; /* */
+  padding: 10px 20px; /*     */
+  border: none; /*  الحدود */
+  border-radius: 5px; /* إضافة زوايا   */
+}
+
+.button:hover {
+  background-color: #0056b3; /* لون الزر عند المرور  */
+}

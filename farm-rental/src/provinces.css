@@ -1,0 +1,49 @@
+/* Provinces.css */
+
+/* إعدادات عامة للأزرار */
+.province-button {
+  background-color: #42556a; /* لون خلفية  */
+  border: none; /* إزالة الحدود */
+  color: white; /* */
+  padding: 25px 40px; /* زيادة المسافة داخل الزر */
+  text-align: center; /*  النص في المركز */
+  text-decoration: none; /* */
+  display: inline-block; /* */
+  font-size: 22px; /* */
+  margin: 15px; /* */
+  border-radius: 8px; /* زوايا  */
+  transition: background-color 0.3s, transform 0.2s; /*  الانتقال */
+  cursor: pointer; /* تغيير شكل  عند المرور فوق الزر */
+  flex: 1; /* السماح للأزرار بالتمدد */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /*  ظل  */
+}
+
+/* */
+.province-button:hover {
+  background-color: #0056b3; /* */
+  transform: translateY(-2px); /* */
+}
+
+/* إعدادات للأزرار  */
+.province-button:active {
+  background-color: #004494; /* */
+  transform: translateY(0); /*    وضعه الطبيعي */
+}
+
+/* إعدادات  الأزرار */
+.buttons-container {
+  display: flex; /* */
+  flex-wrap: wrap; /* */
+  justify-content: center; /* */
+  margin: 0 auto; /* مركز  */
+  max-width: 900px; /* الحد الأقصى لعرض  */
+}
+
+/* إعدادات لعناوين الصفحة */
+.provinces-container {
+  text-align: center; /*   في الوسط */
+  margin: 20px 0; /*  مسافة حول العنوان */
+  font-size: 28px; /*   عنوان الصفحة */
+  color: #333; /* */
+  font-weight: bold; /* */
+}
